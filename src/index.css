@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-accent-1: rgba(211, 188, 142, 0.15);
+  --color-accent-2: rgba(211, 188, 142, 0.45);
+  --color-accent-3: rgba(211, 188, 142);
+  --color-accent-3-filter: invert(81%) sepia(12%) saturate(788%) hue-rotate(2deg) brightness(93%) contrast(91%);
+  --color-bg-1: rgb(23, 23, 28);
+
+  --height-nav: 64px;
+  --gap-regular: 16px;
+
+  --speed-fast: 150ms;
+  --speed-regular: 250ms;
+  --speed-slow: 350ms;
+}
+
+html, body {
+  color: var(--color-accent-3);
+  height: 100%;
+  margin: 0px;
+  padding: 0px !important;
+}
+
+#root {
+  height: 100%;
+}
