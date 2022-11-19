@@ -1,0 +1,31 @@
+.slr-page {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.slr-page-main {
+  background-color: var(--color-bg-2);
+  position: absolute;
+  height: 100%;
+  overflow-y: auto;
+  transition: var(--speed-regular);
+  min-width: 100vw;
+}
+
+.slr-page-main-sidenav-open {
+  left: var(--width-sidenav);
+}
+
+.slr-page-main-sidenav-closed {
+  left: 0vw;
+}
+
+.slr-page-main-overlay-visible {
+  
+}
+
+.slr-page-main-overlay-invisible {
+
+}

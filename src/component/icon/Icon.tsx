@@ -5,13 +5,14 @@ interface IconProps {
   src: string;
 }
 
-export const Icon = ({alt, src}: IconProps) => {
+export const Icon = ({alt, src, ...props}: IconProps) => {
   return (
     <img
       alt={alt}
       className='slr-icon'
       src={src}
       width='24px'
+      {...props}
     />
   )
 }

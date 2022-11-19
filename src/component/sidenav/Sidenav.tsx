@@ -7,11 +7,10 @@ interface SidenavProps {
   children?: ReactNode;
   footer?: ReactNode;
   header?: ReactNode;
-  onClose: () => any;
-  open: boolean;
+  open?: boolean;
 }
 
-export const Sidenav = ({children, footer, header, onClose, open}: SidenavProps) => {
+export const Sidenav = ({children, footer, header, open}: SidenavProps) => {
   return (
     <div className={`slr-sidenav-container ${open ? 'slr-sidenav-container-open' : 'slr-sidenav-container-closed'}`}>
       <div className='slr-sidenav'>

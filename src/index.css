@@ -15,8 +15,10 @@
   --color-accent-3: rgba(211, 188, 142);
   --color-accent-3-filter: invert(81%) sepia(12%) saturate(788%) hue-rotate(2deg) brightness(93%) contrast(91%);
   --color-bg-1: rgb(23, 23, 28);
+  --color-bg-2: rgb(32, 32, 39);
 
   --height-nav: 64px;
+  --width-sidenav: min(80vw, calc(100vw - 64px));
   --gap-regular: 16px;
 
   --speed-fast: 150ms;
