@@ -1,18 +1,24 @@
 import './Icon.css';
 
 interface IconProps {
+  [key: string]: any;
   alt: string;
+  onClick?: () => any;
   src: string;
+  width?: string;
 }
 
-export const Icon = ({alt, src, ...props}: IconProps) => {
+export const Icon = (props: IconProps) => {
+  const {alt, onClick, src, width} = {...props};
+
   return (
     <img
-      alt={alt}
-      className='slr-icon'
-      src={src}
-      width='24px'
       {...props}
+      alt={alt}
+      className={`slr-icon ${onClick ? 'slr-icon-clickable' : ''}`}
+      onClick={onClick}
+      src={src}
+      width={width || '24px'}
     />
   )
 }
