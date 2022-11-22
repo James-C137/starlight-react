@@ -1,0 +1,9 @@
+.slr-button {
+  background-color: var(--color-bg-1);
+  border: 1px solid var(--color-accent-1);
+  border-radius: 4px;
+  color: var(--color-accent-3);
+  cursor: pointer;
+  font-weight: bold;
+  height: 32px;
+}
