@@ -40,6 +40,6 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js"
+  "main": "./dist/starlight-react.umd.cjs",
+  "module": "./dist/starlight-react.js"
 }
