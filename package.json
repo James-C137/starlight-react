@@ -1,6 +1,6 @@
 {
   "name": "@jam-dev/starlight-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -30,7 +30,15 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/starlight-react.js",
+      "require": "./dist/starlight-react.umd.cjs"
+    }
+  },
   "files": [
-    "dist/"
-  ]
+    "dist"
+  ],
+  "main": "./dist/my-lib.umd.cjs",
+  "module": "./dist/my-lib.js"
 }
