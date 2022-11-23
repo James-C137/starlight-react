@@ -19,7 +19,7 @@ export const Button = (props: ButtonProps) => {
   return (
     <button
       {...props}
-      className={props.className || 'slr-button'}
+      className={props.className ? `slr-button ${props.className}` : 'slr-button'}
       onClick={handleClick}
     >
       {children}

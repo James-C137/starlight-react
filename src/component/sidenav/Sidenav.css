@@ -29,7 +29,7 @@
 }
 
 .slr-sidenav > header {
-  padding: 0px var(--gap-regular);
+  padding: 0px var(--gap-x-regular);
 }
 
 .slr-sidenav > header > .slr-sidenav-header-close {
@@ -40,7 +40,7 @@
 
 .slr-sidenav > nav {
   flex-grow: 1;
-  padding: 0px var(--gap-regular);
+  padding: 0px var(--gap-x-regular);
 }
 
 .slr-sidenav > footer {
@@ -49,5 +49,5 @@
   border-top: 1px solid var(--color-accent-1);
   display: flex;
   height: var(--height-nav);
-  padding: 0px var(--gap-regular);
+  padding: 0px var(--gap-x-regular);
 }

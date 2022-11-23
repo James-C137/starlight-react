@@ -5,5 +5,5 @@
   display: flex;
   height: var(--height-nav);
   justify-content: space-between;
-  padding: 0px var(--gap-regular);
+  padding: 0px var(--gap-x-regular);
 }

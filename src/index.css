@@ -19,11 +19,18 @@
 
   --height-nav: 64px;
   --width-sidenav: min(80vw, calc(100vw - 64px));
-  --gap-regular: 16px;
+  --gap-x-regular: 12px;
+  --gap-y-regular: 24px;
+  --gap-y-large: 32px;
 
   --speed-fast: 150ms;
   --speed-regular: 250ms;
   --speed-slow: 350ms;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 html, body {
@@ -32,6 +39,11 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px !important;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #root {
