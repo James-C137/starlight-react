@@ -1,17 +1,15 @@
 .slr-page {
-  display: flex;
   height: 100%;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 }
 
 .slr-page-main {
   background-color: var(--color-bg-2);
-  position: absolute;
+  position: relative;
   height: 100%;
   overflow-y: auto;
   transition: left var(--speed-regular);
-  min-width: 100vw;
 }
 
 .slr-page-main-sidenav-open {
@@ -37,4 +35,24 @@
 
 .slr-page-main-overlay-invisible {
   pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .slr-page-main {
+    transition: margin-left var(--speed-regular);
+  }
+
+  .slr-page-main-sidenav-open {
+    left: 0;
+    margin-left: var(--width-sidenav);
+  }
+
+  .slr-page-main-sidenav-closed {
+    left: 0;
+    margin-left: 0px;
+  }
+
+  .slr-page-main-overlay {
+    display: none;
+  }
 }

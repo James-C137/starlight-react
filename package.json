@@ -1,6 +1,6 @@
 {
   "name": "@jam-dev/starlight-react",
-  "version": "0.0.6",
+  "version": "0.0.14",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -41,5 +41,6 @@
     "dist"
   ],
   "main": "./dist/starlight-react.umd.cjs",
-  "module": "./dist/starlight-react.js"
+  "module": "./dist/starlight-react.js",
+  "types": "./dist/index.d.ts"
 }
