@@ -18,11 +18,11 @@ export const Chip = (props: ChipProps) => {
   }
 
   return (
-    <span className='slr-chip'>
+    <span {...props} className='slr-chip'>
       <p>{value}</p>
       {
         onDelete ?
-        <Icon {...props} alt='delete' onClick={handleDelete} src={closeIcon} width='16px' /> :
+        <Icon alt='delete' onClick={handleDelete} src={closeIcon} width='16px' /> :
         null
       }
     </span>

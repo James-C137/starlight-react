@@ -12,7 +12,12 @@ export default {
 const Template: ComponentStory<typeof ChipList> = (args) => <ChipList {...args} />;
 
 export const Default = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
+  values: ['value 1', 'value 2', 'value 3', 'value 4', 'value 5'],
+};
+
+export const Deletable = Template.bind({});
+Deletable.args = {
+  onDelete: () => {},
   values: ['value 1', 'value 2', 'value 3', 'value 4', 'value 5'],
 };

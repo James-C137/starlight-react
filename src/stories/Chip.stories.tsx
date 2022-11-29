@@ -12,8 +12,13 @@ export default {
 const Template: ComponentStory<typeof Chip> = (args) => <Chip {...args} />;
 
 export const Default = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
   value: 'value',
   onDelete: undefined,
+};
+
+export const Deletable = Template.bind({});
+Deletable.args = {
+  value: 'value',
+  onDelete: () => {},
 };
