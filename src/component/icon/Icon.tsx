@@ -15,7 +15,7 @@ export const Icon = (props: IconProps) => {
     <img
       {...props}
       alt={alt}
-      className={`slr-icon ${onClick ? 'slr-icon-clickable' : ''}`}
+      className={`slr-icon ${onClick ? 'slr-icon-clickable' : ''} ${props.className ? props.className : ''}`}
       onClick={onClick}
       src={src}
       width={width || '24px'}
