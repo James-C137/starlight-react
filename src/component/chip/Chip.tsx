@@ -9,7 +9,7 @@ interface ChipProps {
 }
 
 export const Chip = (props: ChipProps) => {
-  const {onDelete, value} = {...props};
+  const {onDelete, value, ...otherProps} = {...props};
   
   const handleDelete = () => {
     if (onDelete) {
@@ -18,7 +18,7 @@ export const Chip = (props: ChipProps) => {
   }
 
   return (
-    <span {...props} className='slr-chip'>
+    <span {...otherProps} className='slr-chip'>
       <p>{value}</p>
       {
         onDelete ?

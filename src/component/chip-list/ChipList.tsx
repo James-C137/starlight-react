@@ -9,20 +9,20 @@ interface ChipListProps {
 }
 
 export const ChipList = (props: ChipListProps) => {
-  const {onDelete, values} = {...props};
+  const {onDelete, values, ...otherProps} = {...props};
 
   const renderChipList = (values: string[]): ReactNode => {
     const elements: ReactNode[] = [];
 
     values.forEach(value => {
-      elements.push(<Chip onDelete={onDelete} value={value} />);
+      elements.push(<Chip key={value} onDelete={onDelete} value={value} />);
     });
 
     return elements;
   }
 
   return (
-    <div {...props} className='slr-chip-list'>
+    <div {...otherProps} className='slr-chip-list'>
       { renderChipList(values) }
     </div>
   );

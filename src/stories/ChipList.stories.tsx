@@ -13,6 +13,7 @@ const Template: ComponentStory<typeof ChipList> = (args) => <ChipList {...args} 
 
 export const Default = Template.bind({});
 Default.args = {
+  onDelete: undefined,
   values: ['value 1', 'value 2', 'value 3', 'value 4', 'value 5'],
 };
 
