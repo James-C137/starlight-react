@@ -1,7 +1,7 @@
 name: Publish to NPM
 on: [push]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -11,9 +11,15 @@ jobs:
         with:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
-      - name: Install and build
+      - name: Install and build dist
         run: npm ci && npm run build
       - name: Publish on NPM
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Build Storybook
+        run: npm run build-storybook
+      - name: Deploy on Github Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: storybook-static
