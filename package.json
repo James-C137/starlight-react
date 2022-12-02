@@ -1,12 +1,11 @@
 {
   "name": "@jam-dev/starlight-react",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "pub": "npm run build && npm publish --access public",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
