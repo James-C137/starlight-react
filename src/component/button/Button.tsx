@@ -3,7 +3,7 @@ import './Button.css';
 
 interface ButtonProps {
   [key: string]: any;
-  children: ReactNode;
+  children?: ReactNode;
   onClick?: () => any;
 }
 
