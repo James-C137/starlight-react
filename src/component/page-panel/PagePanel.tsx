@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import arrowLeftIcon from '../../assets/arrow-left.svg';
+import arrowLeftIcon from '../../asset/icon/arrow-left.svg';
 import { Button } from '../button/Button';
 import { Icon } from '../icon/Icon';
 import './PagePanel.css';

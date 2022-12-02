@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import accountCircleIcon from '../../assets/account-circle.svg';
-import menuIcon from '../../assets/menu.svg';
+import accountCircleIcon from '../../asset/icon/account-circle.svg';
+import menuIcon from '../../asset/icon/menu.svg';
 import { Icon } from '../icon/Icon';
 import './Navbar.css';
 

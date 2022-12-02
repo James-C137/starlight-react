@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import travelImage from '../assets/undraw_traveling_01tc.svg';
+import travelImage from '../asset/undraw_traveling_01tc.svg';
 import { PagePanel } from '../component/page-panel/PagePanel';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export

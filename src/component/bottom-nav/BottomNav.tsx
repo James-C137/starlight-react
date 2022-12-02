@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import plusIcon from '../../assets/plus.svg';
+import plusIcon from '../../asset/icon/plus.svg';
 import { Button } from '../button/Button';
 import { Icon } from '../icon/Icon';
 import './BottomNav.css';

@@ -1,4 +1,4 @@
-import closeIcon from '../../assets/close.svg';
+import closeIcon from '../../asset/icon/close.svg';
 import { Icon } from "../icon/Icon";
 import './Chip.css';
 
