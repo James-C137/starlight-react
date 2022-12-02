@@ -19,9 +19,5 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Build Storybook
-        run: npm run build-storybook
-      - name: Deploy on Github Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: storybook-static
+      - name: Deploy Storybook
+        run: npm run deploy-storybook
