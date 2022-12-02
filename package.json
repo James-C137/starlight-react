@@ -1,6 +1,6 @@
 {
   "name": "@jam-dev/starlight-react",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -31,11 +31,11 @@
     "vite-plugin-dts": "^1.7.1"
   },
   "exports": {
-    ".": {
+    "./components": {
       "import": "./dist/starlight-react.js",
       "require": "./dist/starlight-react.umd.cjs"
     },
-    "./dist/index.css": {
+    "./styles": {
       "import": "./dist/style.css",
       "require": "./dist/style.css"
     }
