@@ -1,6 +1,6 @@
 {
   "name": "@jam-dev/starlight-react",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -35,7 +35,7 @@
       "import": "./dist/starlight-react.js",
       "require": "./dist/starlight-react.umd.cjs"
     },
-    "./styles": {
+    "./dist/style.css": {
       "import": "./dist/style.css",
       "require": "./dist/style.css"
     }
