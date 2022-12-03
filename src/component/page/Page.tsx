@@ -9,12 +9,15 @@ interface PageProps {
   onCloseSidenav?: () => any;
   onToggleSidenav?: () => any;
   showSidenav?: boolean;
+  sidenavContent?: ReactNode;
 }
 
-export const Page = ({children, onCloseSidenav, onToggleSidenav, showSidenav}: PageProps) => {
+export const Page = ({children, onCloseSidenav, onToggleSidenav, showSidenav, sidenavContent}: PageProps) => {
   return (
     <div className='slr-page'>
-      <Sidenav onClose={onCloseSidenav} open={showSidenav} />
+      <Sidenav onClose={onCloseSidenav} open={showSidenav}>
+        {sidenavContent}
+      </Sidenav>
       <main className={`slr-page-main ${showSidenav ? 'slr-page-main-sidenav-open' : 'slr-page-main-sidenav-closed'}`}>
         <div
           className={`slr-page-main-overlay ${showSidenav ? 'slr-page-main-overlay-visible' : 'slr-page-main-overlay-invisible'}`}
