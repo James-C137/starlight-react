@@ -29,8 +29,8 @@
 }
 
 .slr-page-main-overlay-visible {
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 .slr-page-main-overlay-invisible {
