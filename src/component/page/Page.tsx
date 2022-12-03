@@ -1,13 +1,15 @@
+import { ReactNode } from 'react';
 import { BottomNav } from '../bottom-nav/BottomNav';
 import { Navbar } from '../navbar/Navbar';
 import { Sidenav } from '../sidenav/Sidenav';
 import './Page.css';
 
 interface PageProps {
+  children?: ReactNode;
   showSidenav?: boolean;
 }
 
-export const Page = ({showSidenav}: PageProps) => {
+export const Page = ({children, showSidenav}: PageProps) => {
   return (
     <div className='slr-page'>
       <Sidenav open={showSidenav} />
@@ -15,6 +17,7 @@ export const Page = ({showSidenav}: PageProps) => {
         <div className={`slr-page-main-overlay ${showSidenav ? 'slr-page-main-overlay-visible' : 'slr-page-main-overlay-invisible'}`} />
         <Navbar />
         <BottomNav slot1={'1'} slot2={'2'} slot3={'3'} slot4={'4'} />
+        {children}
       </main>
     </div>
   );
