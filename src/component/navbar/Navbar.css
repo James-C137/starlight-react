@@ -3,8 +3,8 @@
   background-color: var(--color-bg-2);
   border-bottom: 1px solid var(--color-accent-1);
   display: flex;
-  height: var(--height-nav);
   justify-content: space-between;
+  min-height: var(--height-nav);
   padding: 0px var(--gap-x-regular);
   position: sticky;
   top: 0px;
