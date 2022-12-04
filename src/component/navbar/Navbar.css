@@ -7,4 +7,5 @@
   justify-content: space-between;
   padding: 0px var(--gap-x-regular);
   position: sticky;
+  top: 0px;
 }
