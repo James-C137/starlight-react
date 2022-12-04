@@ -9,11 +9,11 @@ interface PagePanelProps {
   children?: ReactNode;
   onClose?: () => any;
   open: boolean;
-  title?: string;
+  title?: ReactNode;
 }
 
 export const PagePanel = (props: PagePanelProps) => {
-  const {children, onClose, open, title} = {...props};
+  const {children, onClose, open, title, ...otherProps} = {...props};
 
   const handleClose = () => {
     if (onClose) {
@@ -23,7 +23,7 @@ export const PagePanel = (props: PagePanelProps) => {
 
   return (
     <div
-      {...props}
+      {...otherProps}
       className={`slr-page-panel ${open ? 'slr-page-panel-open' : 'slr-page-panel-closed'}`}
     >
       <div className='slr-page-panel-title-row'>
@@ -37,11 +37,7 @@ export const PagePanel = (props: PagePanelProps) => {
           </Button> :
           null
         }
-        {
-          title ?
-          <h1>{title}</h1> :
-          null
-        }
+        { title }
       </div>
       {children}
     </div>
