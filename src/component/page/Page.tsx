@@ -27,8 +27,8 @@ export const Page = ({children, navbarContent, onCloseSidenav, onToggleSidenav, 
         <Navbar onToggleSidenav={onToggleSidenav}>
           { navbarContent }
         </Navbar>
-        <BottomNav slot1={'1'} slot2={'2'} slot3={'3'} slot4={'4'} />
         {children}
+        <BottomNav slot1={'1'} slot2={'2'} slot3={'3'} slot4={'4'} />
       </main>
     </div>
   );

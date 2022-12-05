@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+.slr-bottom-nav-spacer {
+  display: block;
+  height: 64px;
+  width: 100%;
+}
+
 .slr-bottom-nav-add {
   align-items: center;
   background-color: var(--color-bg-2);
