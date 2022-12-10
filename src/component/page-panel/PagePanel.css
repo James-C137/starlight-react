@@ -1,32 +1,16 @@
 .slr-page-panel {
-  background-color: var(--color-bg-2);
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-y-large);
-  height: calc(100% - var(--height-nav));
-  margin-top: var(--height-nav);
+  height: 100%;
   overflow-y: auto;
-  padding: var(--gap-y-regular) var(--gap-x-regular);
-  position: absolute;
-  top: 0px;
-  transition: left var(--speed-regular);
+  padding: 24px 0px;
   width: 100%;
-  z-index: 2;
-}
-
-.slr-page-panel-open {
-  left: 0px;
-}
-
-.slr-page-panel-closed {
-  left: 100%;
 }
 
 .slr-page-panel-title-row {
   align-items: center;
   display: flex;
   gap: 12px;
+  padding: 0px var(--gap-x-regular);
 }
 
 .slr-page-panel-close {

@@ -26,7 +26,6 @@
   height: 48px;
   justify-content: center;
   left: calc(50% - 24px);
-  outline: 8px solid var(--color-bg-2);
   position: absolute;
   top: -24px;
   width: 48px;

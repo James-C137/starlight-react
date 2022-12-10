@@ -8,12 +8,11 @@ interface PagePanelProps {
   [key: string]: any;
   children?: ReactNode;
   onClose?: () => any;
-  open: boolean;
   title?: ReactNode;
 }
 
 export const PagePanel = (props: PagePanelProps) => {
-  const {children, onClose, open, title, ...otherProps} = {...props};
+  const {children, onClose, title, ...otherProps} = {...props};
 
   const handleClose = () => {
     if (onClose) {
@@ -24,7 +23,7 @@ export const PagePanel = (props: PagePanelProps) => {
   return (
     <div
       {...otherProps}
-      className={`slr-page-panel ${open ? 'slr-page-panel-open' : 'slr-page-panel-closed'}`}
+      className={'slr-page-panel'}
     >
       <div className='slr-page-panel-title-row'>
         {
